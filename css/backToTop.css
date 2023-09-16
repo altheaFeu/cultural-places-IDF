@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#backToTopBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: var(--global-main-color, #198754);
+    display: none;
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+    z-index: 2;
+    cursor:pointer;
+}
+
+#backToTopBtn:hover {
+    transition: 100ms;
+    transform: scale(1.1);
+} 
+
+.fa-arrow-up{
+    display:inline-block; 
+    color:white;
+    border-color:black;
+    font-size:30px;
+}
+
+@media screen and (max-width:600px){
+    #backToTopBtn{
+        width: 40px;
+        height: 40px;
+    }
+
+    .fa-arrow-up{
+        font-size:25px;
+    }
+}
