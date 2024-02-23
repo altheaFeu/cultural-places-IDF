@@ -61,8 +61,7 @@ L'utilisation de ce projet nécessite un serveur MySQL. Dirigez-vous vers le fic
 $bdd = new PDO('mysql:host=localhost;dbname=your-database;charset=utf8', 'you-user', 'your-password');
 ```
 
-Assurez-vous que votre base de données comprend les tables suivantes :
-- **Utilisateurs**, avec les colonnes "identifiant" et "mot de passe" de types de données appropriés.
+Assurez-vous que votre base de données comprend la table **Utilisateurs**, avec les colonnes "identifiant" et "password".
 
 Voici comment vous pourriez créer cette table : 
 ```sql
